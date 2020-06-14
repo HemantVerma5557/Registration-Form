@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div id="aboutYourself">
+    <div class="container" id="main">
+      <div class="About">
+        <div class="heading">
+          <h1>Register</h1>
+        </div>
+        <div class="navigation">
+          <span class="items active"> <a href="index.html"><span class="CircularBoundary active">1</span>&nbsp;&nbsp;About Yourself</a></span>
+          <span class="items nextAbout"> <a><span class="CircularBoundary">2</span>&nbsp;&nbsp;Contact info</a></span>
+          <span class="items contactNext"> <a><span class="CircularBoundary">3</span>&nbsp;&nbsp;Education</a></span>
+          <span class="items educationNext"> <a><span class="CircularBoundary">4</span>&nbsp;&nbsp;Preview</a></span>
+        </div>
+        <br>
+        <div class="heading">
+          <h4>Basic Info</h4>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="Name"><strong>Name</strong> </label>
+            <div class="row name">
+              <div class="col">
+                <input type="text" id="fName" class="form-control form-control-sm" placeholder="First name" required>
+              </div>
+              <div class="col">
+                <input type="text" id="lName" class="form-control form-control-sm" placeholder="Last name" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="Profile-Photo"><strong>Profile Photo</strong> </label>
+            <div class="row">
+              <div class="col">
+              <input type="file" name="Upload Image" value="image">
+              </div>
+              <div class="col">
+                <img id="profile" src="img/Profile.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="DOB"><strong>DOB</strong></label>
+            <br>
+            <input type="date" id="dob" class="form-control" name="DOB" required style="width:30%;" required>
+          </div>
+
+          <div class="form-group">
+            <label for="Phone"><strong>Phone</strong></label><br>
+            <input type="tel" id="phone" class="form-control" name="Phone" required style="width:50%;" required>
+          </div>
+          <div class="form-group">
+            <br>
+            <a class="nextAbout" class="btn btn-lg btn-primary" name="next"><button class="btn btn-lg btn-primary" type="button" name="button">Next</button></a>
+          </div>
+      </div>
+      </form>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <div id="contact">
+
+    <div class="container" id="main">
+      <div class="contact">
+        <div class="heading">
+          <h1>Register</h1>
+        </div>
+        <div class="navigation">
+          <span class="items"><a href="index.html"><span class="CircularBoundary">1</span>&nbsp;&nbsp;About Yourself</a></span>
+          <span class="items nextAbout active"> <a><span class="CircularBoundary active">2</span>&nbsp;&nbsp;Contact info</a></span>
+          <span class="items contactNext"> <a><span class="CircularBoundary">3</span>&nbsp;&nbsp;Education</a></span>
+          <span class="items educationNext"> <a><span class="CircularBoundary">4</span>&nbsp;&nbsp;Preview</a></span>
+        </div>
+        <div class="heading">
+          <h4>Address </h4>
+        </div>
+        <form class="" action="index.html" method="post">
+          <div class="form-group">
+            <h6><label for="Name"><strong>Mail Address</strong> </label></h6>
+            <input type="text" id="ma1" runat="server" class="form-control form-control-sm" placeholder="Address Line 1" required>
+            <br><input type="text" id="ma2" class="form-control form-control-sm" placeholder="Address Line 2" required>
+            <br>
+
+            <div class="row" style="margin-left: 0px;">
+              <div class="<col>">
+                <input type="text" id="city" class="form-control form-control-sm" placeholder="City" name="city" value="" required>
+              </div>
+              <div class="col">
+                <select class="custom-select custom-select-sm" id="inputGroupSelect01 state">
+                  <option selected>State</option>
+                  <option value="One">One</option>
+                  <option value="Two">Two</option>
+                  <option value="Three">Three</option>
+                </select>
+              </div>
+              <div class="col">
+                <input type="text" id="zipcode" class="form-control form-control-sm" placeholder="Zip code" name="" value="" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="heading">
+            <h4>Permanent Address</h4>
+          </div>
+
+          <div class="">
+            <input type="checkbox" id="address" aria-label="Checkbox for following text input">
+            Same as mail address
+          </div><br>
+
+          <div class="heading">
+            <h6> <label for=""><strong>Address</strong></label></h6>
+          </div>
+          <div class="">
+            <input type="text" id="pma1" runat="server" class="form-control form-control-sm" placeholder="Address line 1" name="" value="" required>
+          </div><br>
+          <div class="">
+            <input type="text" id="pma2" class="form-control form-control-sm" placeholder="Address line 2" name="" value="" required>
+          </div>
+          <br>
+          <div class="row" style="margin-left: 0px;">
+            <div class="<col>">
+              <input type="text" id="pcity" class="form-control form-control-sm" placeholder="City" name="" value="" required>
+            </div>
+            <div class="col">
+              <select class="custom-select custom-select-sm" id="inputGroupSelect01">
+                <option selected>State</option>
+                <option value="One">One</option>
+                <option value="Two">Two</option>
+                <option value="Three">Three</option>
+              </select>
+            </div>
+            <div class="col">
+              <input type="text" id="pzipcode" class="form-control form-control-sm" placeholder="Zip code " name="" value="" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col form-group">
+              <a class="contactBack"><button class="btn btn-lg btn-primary" type="button" name="button">back</button></a>
+            </div>
+            <div class="col form-group">
+              <a class="contactNext"><button class="btn btn-lg btn-primary" type="button" name="button">Next</button></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Education info-->
+  <div id="education">
+
+    <div class="container" id="main">
+      <div class="heading">
+        <h1>Register</h1>
+      </div>
+      <div class="navigation">
+        <span class="items"><a href="index.html"><span class="CircularBoundary">1</span>&nbsp;&nbsp;About Yourself</a></span>
+        <span class="items nextAbout"> <a><span class="CircularBoundary">2</span>&nbsp;&nbsp;Contact info</a></span>
+        <span class="items contactNext active"> <a><span class="CircularBoundary active">3</span>&nbsp;&nbsp;Education</a></span>
+        <span class="items educationNext"> <a><span class="CircularBoundary">4</span>&nbsp;&nbsp;Preview</a></span>
+      </div>
+      <br>
+
+      <div class="">
+        <div class="">
+          <h5>Higher Education</h5>
+        </div>
+        <div class="">
+          <select class="custom-select custom-select-sm" id="inputGroupSelect01 heducation">
+            <option selected>Select Higher Education</option>
+            <option value="B Tech">B Tech</option>
+            <option value="M Tech">M Tech</option>
+            <option value="MCA">MCA</option>
+          </select>
+          <small>Select your higher education</small>
+        </div>
+      </div>
+      <br>
+      <div class="">
+        <div class="">
+          <h5>Skills</h5>
+        </div>
+<div class="" id="newSkill">
+  <div class="skills">
+    <select class="custom-select custom-select-sm" id="inputGroupSelect01 skill1" style="width:30%;">
+      <option selected>Select Skills</option>
+      <option value="C#">C#</option>
+      <option value="C++">C++</option>
+      <option value="HTML">HTML</option>
+      <option value="PHP">PHP</option>
+      <option value="Python">Pyhon</option>
+    </select>
+  </div>
+</div>
+<br>
+<button type="button" id="AddSkill" class="btn btn-lg btn-primary" name="button">Add Skill</button>
+  </div>
+      <br>
+
+      <div class="">
+        <div class="form-group row">
+
+          <div class="col">
+            <div class="heading">
+              <h5><label for="exampleFormControlFile1">Resume</label></h5>
+            </div>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <small>or drag file here</small>
+          </div>
+          <div class="col">
+            <div class="heading">
+              <h5><label for="exampleFormControlFile1">Education Docs</label></h5>
+            </div>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <small>Upload Education related documents</small>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="col  form-group">
+            <a class="educationBack"><button class="btn btn-lg btn-primary" type="button" name="button">back</button></a>
+          </div>
+          <div class="col  form-group">
+            <a class="educationNext"><button class="btn btn-lg btn-primary" type="button" name="button">Next</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--preview-->
+
+  <div id="preview">
+
+    <div class="container" id="main">
+      <div class="heading">
+        <h1>Register</h1>
+      </div>
+      <div class="navigation">
+        <span class="items contactBack"><a href="index.html"><span class="CircularBoundary">1</span>&nbsp;&nbsp;About Yourself</a></span>
+        <span class="items nextAbout"> <a><span class="CircularBoundary">2</span>&nbsp;&nbsp;Contact info</a></span>
+        <span class="items contactNext"> <a><span class="CircularBoundary">3</span>&nbsp;&nbsp;Education</a></span>
+        <span class="items active"> <a href=><span class="CircularBoundary active">4</span>&nbsp;&nbsp;Preview</a></span>
+      </div>
+      <br>
+      <div id="output">
+        <div class="heading">
+          <h4>About Yourself</h4>
+        </div>
+        <strong>
+          <p>First Name = <span id="fNameOutput"> </span></p>
+          <p>Last Name = <span id="lNameOutput"> </span></p>
+          <p>DOB = <span id="dobOutput"> </span></p>
+          <p>Phone number = <span id="phoneOutput"> </span></p>
+        </strong>
+        <br>
+        <div class="heading">
+          <h4>Address</h4>
+        </div>
+        <strong>
+          <p>Mail Address 1 = <span id="ma1Output"> </span></p>
+          <p>Mail Address 2 = <span id="ma2Output"> </span></p>
+          <p>City = <span id="cityOutput"> </span></p>
+          <p>State = <span id="stateOutput"> </span></p>
+          <p>Zip code = <span id="zipcodeOutput"> </span></p>
+        </strong>
+        <div class="heading">
+          <h4>Parmanent Address</h4>
+        </div>
+        <strong>
+          <p>Mail Address 1 = <span id="pma1Output"> </span></p>
+          <p>Mail Address 2 = <span id="pma2Output"> </span></p>
+          <p>City = <span id="pcityOutput"> </span></p>
+          <p>State = <span id="pstateOutput"> </span></p>
+          <p>Zip code = <span id="pzipcodeOutput"> </span></p>
+        </strong>
+        <br>
+        <div class="heading">
+          <h4>Education</h4>
+        </div>
+        <strong>
+          <p>Higher Education= <span id="heducationOutput"> </span></p>
+          <p>Skills = <span id="skill1Output"> </span></p>
+        </strong>
+      </div>
+
+
+      <div class="">
+        <div class="heading">
+          <h5>Feedback</h5>
+        </div>
+        <br>
+        <div class="">
+          <table>
+            <tbody>
+              <tr>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th style="text-align:center; padding-left: 5px; padding-right: 5px;"> <label for="">very Unsatisfied</label> </th>
+                <th style="text-align:center; padding-left: 5px; padding-right: 5px;"> <label for="">Unsatisfied</label> </th>
+                <th style="text-align:center; padding-left: 5px; padding-right: 5px;"> <label for="">Neutral</label> </th>
+                <th style="text-align:center; padding-left: 5px; padding-right: 5px;"> <label for="">satisfied</label> </th>
+                <th style="text-align:center; padding-left: 5px; padding-right: 5px;"> <label for="">very satisfied</label> </th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="editor-container editorHasText" style="display: inline-block;">
+                    <div class="">
+                      <strong>Rate your experience</strong>
+                    </div>
+                  </div>
+                </td>
+                <td style="text-align: center;">
+                  <input type="radio" class="form-radio" title="1" name="" value="1">
+                </td>
+                <td style="text-align: center;">
+                  <input type="radio" class="form-radio" title="1" name="" value="1">
+                </td>
+                <td style="text-align: center;">
+                  <input type="radio" class="form-radio" title="1" name="" value="1">
+                </td>
+                <td style="text-align: center;">
+                  <input type="radio" class="form-radio" title="1" name="" value="1">
+                </td>
+                <td style="text-align: center;">
+                  <input type="radio" class="form-radio" title="1" name="" value="1">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+
+      <div class="row" id="last">
+        <div class="col  form-group">
+          <a class="contactNext"><button class="btn btn-lg btn-primary" type="button" name="button">Back to edit</button></a>
+        </div>
+        <div class="col  form-group">
+
+          <a href="thankyou.html"><button class="btn btn-lg btn-primary" type="button" name="button">Submit</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="javascript/main.js"></script>
+
+</body>
+
+</html>

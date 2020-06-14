@@ -1,0 +1,68 @@
+.container{
+  margin: 50px;
+}
+.CircularBoundary{
+  border-radius: 50%;
+  padding-left: 6px;
+  padding-right: 6px;
+  background: white;
+  color: black;
+  border-style: solid;
+  border-width: thin;
+}
+.CircularBoundary.active{
+  border-style: none;
+  border-width: thin;
+  background-color: #DA2F00;
+  color: white;
+}
+.items.active{
+  font-weight: bolder;
+}
+.items{
+  margin-right: 2%;
+}
+.items a{
+  color:black;
+}
+.heading h4{
+  padding-bottom: 1%;
+  padding-top: 1%;
+  font-weight: bolder;
+}
+.heading h5{
+  padding-bottom: 1%;
+  padding-top: 1%;
+  font-weight: bolder;
+}
+
+.row.name{
+  width: 80%;
+}
+.navigation{
+  padding-bottom: 1%;
+}
+div label{
+  margin-bottom:.1rem;
+}
+
+.btn-lg.btn-primary{
+  background: #DA2F00;
+  color:white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-color: #DA2F00;
+}
+
+.choosefile{
+  background: #DA2F00;
+  color:white;
+
+}
+
+
+
+
+#main{
+  max-width: 50%;
+}
